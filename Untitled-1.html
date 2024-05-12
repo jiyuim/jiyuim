@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-box">
+        
+        <div class="links2">
+            <a href="#" style="color:orangered"  >Testsite</a><a href="#">게시판</a><a href="#">대시보드</a>
+            <div class="input-group2">
+                <button2 type="submit" style="background-color: aliceblue;">로그인</button2>
+            </div>
+       
+           
+        </div>
+        <h2>로그인</h2>
+        <form action="/login" method="post">
+            <div class="input-group">
+                <input type="text" id="id" name="id" placeholder="이메일 주소" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="비밀번호 입력" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">로그인</button>
+            </div>
+        </form>
+        <div class="links">
+            <a href="#">아이디 찾기</a> | <a href="#">비밀번호 찾기</a> | <a href="#">회원가입</a>
+        </div>
+
+    </div>
+    <script>
+        const loginBtn = document.getElementById('loginBtn');
+        const loginBox = document.getElementById('loginBox');
+
+        loginBtn.addEventListener('click', function() {
+            loginBox.style.display = 'block'; // 로그인 상자 보이기
+        });
+    </script>
+</body>
+</html>
